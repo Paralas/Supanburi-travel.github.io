@@ -1,0 +1,370 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* General styles */
+:root {
+    --bg-color: #1f1f1f;
+    --bg2--color: linear-gradient(#e66465, #9198e5);
+    --second-bg-color: #424242cc;
+    --text-color: #fffcfc;
+    --main-color: rgb(113, 116, 113);
+}
+
+html {
+    font-size: 80%;
+    overflow: auto;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Itim', cursive;
+    margin-top: 100px;
+}
+
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--bg-color);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+}
+
+/* Hover effect */
+.navbar a:hover {
+    background-color: #555;
+}
+
+.navbar a.active {
+    background-color: #555;
+}
+
+/* Custom button styles */
+.button {
+    display: inline-block;
+    background-color: #555;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+  
+.button:hover {
+    background-color: #777;
+}
+
+/* index CSS */
+.home-banner {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+}
+
+.home-banner img {
+    display: block;
+    width: 100%;
+}
+
+.home-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+    font-size: 2rem;
+    line-height: 1.5;
+    padding: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.7);/* Adding a semi-transparent background for better readability */
+    border-radius: 10px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.slogan {
+    position: relative;
+    text-align: center;
+    color: #ffffff;
+    font-size: 2rem;
+    padding: 0.5rem;
+    line-height: 1.5;
+    border-radius: 10px;
+}
+
+/* detail css */
+.dt-title {
+    text-align: center;
+    font-size: 4rem;
+}
+
+.dt-content, 
+.dt-content2 {
+    margin-right: 20px;
+    margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align:justify ;
+    hyphens: auto; 
+    
+}
+.dt-content2 {
+    margin-bottom: 100px;
+}
+.dt-pic,
+.dt-pic2 {
+    flex: 1;
+    max-width: 100%;
+    padding: 20px;
+}
+.dt-pic img{
+    max-width: 100%;
+    height: auto;
+    border: solid 2px coral;
+}
+.dt-detail,
+.dt-detail2 {
+    flex: 2;
+    max-width: 100%;
+    padding: 20px;
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-bottom: 150px;
+    background-color: rgba(0, 0, 0, 0.7);/* Adding a semi-transparent background for better readability */
+    border-radius: 10px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+/* travel CSS */
+.tv-content h1 { 
+    text-align: center;
+    font-size: 4rem;
+}
+
+.tv-map {
+    position: relative;
+    margin: 2rem;
+    padding: 2rem;
+}
+
+.tv-map p {
+    font-size: 3rem;
+}
+
+.tv-mapcontent {
+    margin-right: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    hyphens: auto; 
+}
+.tv-mappic {
+    flex: 1;
+    max-width: 100%;
+    padding: 20px;
+}
+
+.tv-mappic h3 {
+    text-align: center;
+    font-size: 2rem;
+    line-height: 1.5;
+    padding: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.7);/* Adding a semi-transparent background for better readability */
+    border-radius: 10px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.tv-mapdetail {
+    flex: 2;
+    max-width: 100%;
+    padding: 20px;
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.7);/* Adding a semi-transparent background for better readability */
+    border-radius: 10px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.tv-mapdetail h3 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.tv-howto {
+    padding-left: 40px;
+}
+
+/* hightlight CSS */
+.hg-title { 
+    text-align: center;
+    font-size: 4rem;
+}
+
+.slideshow-container {
+    width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+  
+.slide {
+    display: none;
+}
+  
+.slide img {
+    width: 100%;
+    height: auto;
+}
+  
+.slide-details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+}
+  
+.slide-details h2 {
+    margin: 0;
+}
+  
+.slide-details p {
+    font-size: 2rem;
+    margin: 5px 0;
+}
+  
+/* Add CSS to control the slideshow animation */
+.fade {
+    animation: fade 2s ease-in-out infinite;
+}
+  
+@keyframes fade {
+    0%, 100% { opacity: 0; }
+    20%, 80% { opacity: 1; }
+}
+
+/* contact CSS */
+.contact-title{
+    text-align: center;
+    font-size: 4rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contact-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.ct-profile img {
+    align-items: center;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.ct-detail {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    flex-basis: calc(50% - 20px);
+    margin: 10px;
+    padding: 20px;
+    border: 2px solid #ccc;
+}
+
+.box p,
+h2 {
+    font-size: 2rem;
+}
+
+/* Footer CSS */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: var(--second-bg-color);
+    color: #fff;
+    padding: 2rem;
+}
+
+footer h2 {
+    font-size: 2rem;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar a {
+        padding: 0.5rem 1rem;
+    }
+
+    .home-content {
+        font-size: 1.5rem;
+    }
+    .tv-mapcontent {
+        flex-direction: column;
+    }
+    
+    .tv-mappic,
+    .tv-mapdetail {
+        flex: initial;
+        max-width: 100%;
+        padding: 10px;
+        font-size: 1.8rem;
+    }
+    .ct-profile img {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .box {
+        flex-basis: calc(100% - 20px);
+    }
+}
